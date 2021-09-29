@@ -14,7 +14,7 @@ public class Kata2 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        int[] data = new int[15];
+        Integer[] data = new Integer[15];
        
         data[0] = 12;
         data[1] = 20;
