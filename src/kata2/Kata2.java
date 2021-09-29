@@ -32,15 +32,12 @@ public class Kata2 {
         data[13] = 77;
         data[14] = 77;
        
-        Map<Integer, Integer> histogram = new HashMap<Integer, Integer>();
-        for (int key : data) {
-            histogram.put(key, histogram.containsKey(key) ? histogram.get(key) + 1 : 1);
-        }
+        Histogram histo = new Histogram(data);
        
-       
-        for (Map.Entry<Integer, Integer> entry : histogram.entrySet()) {
+        Map<Integer, Integer> histogr = histo.getHistogram();
+        
+        for (Map.Entry<Integer, Integer> entry : histogr.entrySet()) {
             System.out.println (entry.getKey () + " ==> " + entry.getValue());
         }
-    }
-   
+    }  
 }
